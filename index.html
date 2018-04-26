@@ -11,7 +11,7 @@
 
 <script type="text/javascript">
 try {
-var urlhash = window.location.hash;
+var urlhash = window.location.hash; 
 if (!urlhash.match("fromapp"))
 {
 if ((navigator.userAgent.match(/(iPhone|iPod|Android|ios|iPad)/i)))
@@ -28,6 +28,22 @@ catch(err)
   <script src="https://unpkg.com/openlayers"></script>
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script src="projection.js"></script>
+  <style type="text/css">
+<!--
+.STYLE1 {
+	color: #FF0000;
+	font-size: 14px;
+}
+.STYLE2 {
+	color: #FF00FF;
+	font-size: 14px;
+}
+.STYLE4 {
+	font-size: medium;
+ 	font-weight: bold;
+}
+-->
+  </style>
 </head>
 
 <body>
@@ -111,10 +127,12 @@ catch(err)
         <br> -->
         <br>
         <br>
+        
         <span>Game Start: {{ gameStartTime }}</span>
         <br>
         <span>Last Packet: {{ lastPacketTime }}</span>
         <br>
+        
         <span>{{ coordinate }}</span>
       </section>
 
